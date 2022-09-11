@@ -31,10 +31,11 @@ public class Silly implements Comparable<Silly>{
     /**
      * Return the current value of my_static and increase my_static by 1.
      */
-    public void countStatic() {
+    public int countStatic() {
         // This method uses the static variable and increases it.
+        int to_return = my_static;
         my_static += 1;
-
+        return to_return;
     }
 
     /**
